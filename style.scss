@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+$green-color:hsl(75, 94%, 57%);
+$white:hsl(0, 0%, 100%);
+$Grey-700: hsl(0, 0%, 20%);
+$Grey-800: hsl(0, 0%, 12%);
+$Grey-900: hsl(0, 0%, 8%);
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: $Grey-900;
+    font-size: clamp(0.8rem, 2.5vw, 0.875rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+
+
+    main{
+        background-color:$Grey-800 ;
+        min-width: 20rem;
+        width: 50%;
+        max-width: 25rem;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1em;
+
+        header{
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            img{
+                width: 8rem;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+            }
+
+            h1{
+                color: $white;
+                font-weight: 600;
+                font-size: 2rem;
+                
+                text-align: center;
+                
+            }
+            p:first-of-type{
+                color: $green-color;
+                margin-top: 0.4rem;
+                font-weight: 400;
+                letter-spacing: 0.05rem;
+            }
+            p:last-of-type{
+                color: $white;
+                margin-top: 2rem;
+                font-weight: 400;
+            }
+
+
+        }
+
+        section{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            a{
+                background-color: $Grey-700;
+                min-width: 15rem;
+                width: 40vw;
+                max-width: 20rem;
+                text-align: center;
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                border-radius: 0.5rem;
+                color: $white;
+                text-decoration: none;
+                font-weight: 600;
+                
+                &:hover{
+                    cursor: pointer;
+                    background-color: $Grey-900;
+                    
+                }
+            }
+
+            a:active, a:focus{
+                background-color: $Grey-900;
+
+            }
+        }
+    }
+
+    .attribution{
+    position: fixed;
+    bottom: 0;
+    color: $white;
+    font-size: 0.5rem;
+
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+}
+}
+
