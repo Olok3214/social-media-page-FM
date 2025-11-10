@@ -27,19 +27,6 @@ Users should be able to:
 - Flexbox
 
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-Changing focus states
-
-a:active, a:focus{
-              background-color: red;
-                
-        }
-
-
-
 
 
 
